@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <script>
+    async function logAndRedirect() {
+      try {
+        // Call your Web App to log the email
+        await fetch("https://script.google.com/a/macros/fireflyelectric.com/s/AKfycbxOHQJNawEJXrEWiG2sIiWI2zIGh8BuYi1coYnEx4hLA79FOqRwc84VEflHs0wcq-US/exec", 
+        { method: "GET", mode: "no-cors" });
+
+        // Redirect the user to Looker Studio
+        window.location.href = "https://sites.google.com/fireflyelectric.com/sceportal/bia-wires-weight-test?authuser=0";
+      } catch (error) {
+        console.error("Error logging email:", error);
+        // Redirect anyway if logging fails
+        window.location.href = "https://sites.google.com/fireflyelectric.com/sceportal/bia-wires-weight-test?authuser=0";
+      }
+    }
+
+    // Run on page load
+    logAndRedirect();
+  </script>
+</head>
+<body>
+  <h2>Redirecting...</h2>
+</body>
+</html>
